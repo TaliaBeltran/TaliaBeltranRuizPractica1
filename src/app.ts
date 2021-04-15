@@ -1,16 +1,10 @@
-const NumeroPrimo = Numero =>  {
-    if (Numero == 0 || Numero == 1 || Numero == 4) 
-    return false;
-    for (let x:number = 2; x < Numero / 2; x++) {
-        if (Numero % x == 0) 
-        return false;
-    }
-    return true;
-}
+const invertirCadena = cadena => cadena.split("").reverse().join("");
+ 
+let cadena = "this is a sample string";
+let cadena1 = "a";
+let cadena2 = "bang";
 
-const numeroAProbar = [2, 21, 83];
-
-numeroAProbar.forEach(Numero => {
-    console.log("%d", Numero, NumeroPrimo(Numero));
-});
+console.log(invertirCadena(cadena));
+console.log(invertirCadena(cadena1));
+console.log(invertirCadena(cadena2))
 
