@@ -1,10 +1,11 @@
-const invertirCadena = cadena => cadena.split("").reverse().join("");
- 
-let cadena = "this is a sample string";
-let cadena1 = "a";
-let cadena2 = "bang";
-
-console.log(invertirCadena(cadena));
-console.log(invertirCadena(cadena1));
-console.log(invertirCadena(cadena2))
+function palindromeChecker(str) {
+    const newStr = str.replace(/[\W_]/g, "").toLowerCase()
+    const strReversed = newStr.split("").reverse().join("")
+  
+    return newStr === strReversed ? "true" : "false"
+  }
+  
+  console.log(palindromeChecker("Ali tomo tilathis is a sample string")) 
+  console.log(palindromeChecker("a")) 
+  console.log(palindromeChecker("bangnab")) 
 
